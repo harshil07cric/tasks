@@ -7,7 +7,7 @@ AWSXRay.captureHTTPsGlobal(require('https'));
 AWSXRay.captureAWS(AWS);
 
 const dynamoDB = new AWS.DynamoDB.DocumentClient();
-const TABLE_NAME = 'Weather';
+const TABLE_NAME = ${target_table};
 
 exports.handler = async (event) => {
     const segment = AWSXRay.getSegment();
@@ -23,23 +23,24 @@ exports.handler = async (event) => {
         const weatherData = {
             id: uuidv4(),
             forecast: {
-                elevation: response.data.elevation,
-                generationtime_ms: response.data.generationtime_ms,
-                hourly: {
-                    temperature_2m: response.data.hourly.temperature_2m,
-                    time: response.data.hourly.time
-                },
-                hourly_units: {
-                    temperature_2m: response.data.hourly_units.temperature_2m,
-                    time: response.data.hourly_units.time
-                },
                 latitude: response.data.latitude,
                 longitude: response.data.longitude,
+                generationtime_ms: response.data.generationtime_ms,
+                utc_offset_seconds: response.data.utc_offset_seconds,
                 timezone: response.data.timezone,
                 timezone_abbreviation: response.data.timezone_abbreviation,
-                utc_offset_seconds: response.data.utc_offset_seconds
+                elevation: response.data.elevation,
+                hourly_units: {
+                    time: response.data.hourly_units.time,
+                    temperature_2m: response.data.hourly_units.temperature_2m
+                },
+                hourly: {
+                    time: response.data.hourly.time,
+                    temperature_2m: response.data.hourly.temperature_2m
+                }
             }
         };
+
 
         const putParams = {
             TableName: TABLE_NAME,
