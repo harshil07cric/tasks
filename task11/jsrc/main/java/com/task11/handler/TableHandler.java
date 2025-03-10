@@ -4,6 +4,7 @@ import com.amazonaws.services.lambda.runtime.Context;
 import com.amazonaws.services.lambda.runtime.RequestHandler;
 import com.task11.model.Table;
 import com.task11.util.DynamoDBUtil;
+import com.task11.handler.ApiGatewayResponse;
 
 import java.util.List;
 import java.util.Map;

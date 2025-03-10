@@ -7,6 +7,7 @@ import syndicate.sdk.annotations.DependsOn;
 import syndicate.sdk.annotations.EnvironmentVariable;
 import syndicate.sdk.annotations.EnvironmentVariables;
 import syndicate.sdk.enums.ResourceType;
+import com.task11.handler.ApiGatewayResponse;
 
 @DependsOn(resourceType = ResourceType.COGNITO_USER_POOL, name = "${booking_userpool}")
 @EnvironmentVariables(value = {
