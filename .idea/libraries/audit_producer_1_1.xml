@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="audit_producer-1.1">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/task06/.syndicate-config-dev/bundles/task06_250308.112104/audit_producer-1.0.zip!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

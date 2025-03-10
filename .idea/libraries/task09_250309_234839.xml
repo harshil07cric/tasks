@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="task09_250309.234839">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/task09/.syndicate-config-dev/bundles/task09_250309.234839/weather_sdk_layer.zip!/" />
+      <root url="jar://$PROJECT_DIR$/task09/.syndicate-config-dev/bundles/task09_250309.234839/api_handler-1.0.zip!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="weather_sdk_layer">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/task09/weather_sdk_layer.zip!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
