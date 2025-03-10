@@ -46,11 +46,11 @@
         </dependency>
 
         <!-- Syndicate SDK (if applicable) -->
-        <dependency>
-            <groupId>syndicate.sdk</groupId>
-            <artifactId>syndicate-sdk</artifactId>
-            <version>REPLACE_WITH_CORRECT_VERSION</version>
-        </dependency>
+<!--        <dependency>-->
+<!--            <groupId>syndicate.sdk</groupId>-->
+<!--            <artifactId>syndicate-sdk</artifactId>-->
+<!--            <version>REPLACE_WITH_CORRECT_VERSION</version>-->
+<!--        </dependency>-->
 
         <!-- Jackson for JSON processing -->
         <dependency>
